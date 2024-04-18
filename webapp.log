@@ -1,0 +1,25 @@
+2024/04/16 16:18:04 main.go:15: test
+2024/04/16 16:25:25 main.go:16: test
+2024/04/16 16:40:45 main.go:16: test
+2024/04/16 16:47:07 main.go:16: test
+2024/04/16 16:47:27 main.go:16: test
+2024/04/16 16:48:29 main.go:16: test
+2024/04/16 16:51:21 main.go:16: test
+2024/04/16 16:53:20 main.go:16: test
+2024/04/16 16:53:39 main.go:16: test
+2024/04/16 16:56:34 main.go:16: test
+2024/04/16 17:01:28 main.go:16: test
+2024/04/16 17:03:24 main.go:16: test
+2024/04/16 17:05:22 main.go:16: test
+2024/04/16 17:05:22 todos.go:27: table todos has no column named created_at
+2024/04/16 17:06:17 main.go:16: test
+2024/04/16 18:23:09 main.go:16: test
+2024/04/16 18:27:16 main.go:16: test
+2024/04/16 18:32:31 main.go:16: test
+2024/04/16 18:32:52 main.go:16: test
+2024/04/16 18:37:01 main.go:16: test
+2024/04/16 18:37:01 todos.go:93: near "user_id": syntax error
+2024/04/16 18:37:51 main.go:16: test
+2024/04/16 18:39:24 main.go:16: test
+2024/04/17 13:37:32 route_auth.go:40: sql: no rows in result set
+2024/04/17 13:37:32 server.go:3413: http: superfluous response.WriteHeader call from todo-app/app/controllers.authenticate (route_auth.go:58)
