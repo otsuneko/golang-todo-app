@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"todo-app/config"
+	// "todo-app/config"
 	"github.com/google/uuid"
 	"github.com/lib/pq"
 )
@@ -26,7 +26,8 @@ func init() {
 	url := os.Getenv("DATABASE_URL")
 	connection, _ := pq.ParseURL(url)
 	connection += "sslmode=require"
-	Db, err = sql.Open(config.Config.SQLDriver, connection)
+	// Db, err = sql.Open(config.Config.SQLDriver, connection)
+	Db, err = sql.Open(os.Getenv("DB_DRIVER"), connection)
 	if err != nil {
 		log.Fatalln(err)
 	}

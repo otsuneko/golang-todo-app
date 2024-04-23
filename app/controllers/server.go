@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"regexp"
 	"todo-app/app/models"
-	"todo-app/config"
+	// "todo-app/config"
 )
 
 func generateHTML(w http.ResponseWriter, data interface{}, filenames ...string) {
@@ -51,7 +51,8 @@ func parseURL(fn func(http.ResponseWriter, *http.Request, int)) http.HandlerFunc
 }
 
 func StartMainServer() error {
-	files := http.FileServer(http.Dir(config.Config.Static))
+	// files := http.FileServer(http.Dir(config.Config.Static))
+	files := http.FileServer(http.Dir(os.Getenv("STATIC")))
 	http.Handle("/static/", http.StripPrefix("/static/", files))
 	http.HandleFunc("/", top)
 	http.HandleFunc("/signup", signup)
