@@ -14,11 +14,6 @@ primary_region = 'nrt'
   min_machines_running = 0
   processes = ['app']
 
-[build]
-  [build.args]
-    STATIC="app/views"
-    DB_DRIVER="postgres"
-
 [[vm]]
   memory = '1gb'
   cpu_kind = 'shared'
