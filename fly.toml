@@ -15,7 +15,7 @@ primary_region = 'nrt'
   processes = ['app']
 
 [[statics]]
-  guest_path = "/app/public"
+  guest_path = "/app/views/templates"
   url_prefix = "/public"
 
 [env]
