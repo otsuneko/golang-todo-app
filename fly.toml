@@ -16,7 +16,7 @@ primary_region = 'nrt'
 
 [[statics]]
   guest_path = "/app/views/templates"
-  url_prefix = ""
+  url_prefix = "/"
 
 [env]
   PORT = 8080
